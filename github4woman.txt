@@ -1,0 +1,94 @@
+Aula 14/06
+
+Controle de versão é um sistema que registra alterações em um arquivo ou em um conjunto de arquivos para que possamos recuperar versões específicas posteriormente.
+
+Git é um sistema de controle de versão distribuído. Gratuito e de código aberto. 
+
+No controle de versão distribúido, existe um computador que atua como servidor, e cada um dos computadores que em algum momento fizeram uma cópia do código-fonte, atuam como backup deste computador. Diversos computadores podem alterar um mesmo arquivo. 
+
+Snapshots vs deltas
+
+Snapshots é uma cópia completa do repositório. Cada commit representa um snapshot do código, ou seja, eu consigo ter versões de cada momento do código.
+
+Delta representa apenas o que mudou de um arquivo para o outro. Então eu não consigo voltar exatamente para o ponto em que mudou. 
+
+git clone: trazer o código que está no servidor e colocar no Working directory. 
+
+git add: após rodar esse comando, o código fica em staging area, ou seja, é necessário que ocorra alguma alteração no código. 
+
+git commit: salvar a alteração. p cada commit eu tenho um snapshot.
+
+git fetch: valida se houve alterações no repositório.
+
+git pull: trás as alterações do repositório principal p o meu repositório local.
+
+Hash: ID do commit.
+Object: O que eu estou trabalhando.
+Branch: cada ramificação do código.
+Remote: meu repositório online.
+
+Github é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão utilizando git.
+
+Tipos de conta: personal, organization e enterprise. 
+Planos: Github free, pro, team, enterprise.
+
+Aula 16/05
+
+Github marketplace é uma plataforma onde podemos descobrir e comprar ferramentas que se integram ao Github para ajudar a otimizar o seu fluxo de trabalho.
+
+Github como um todo
+
+Conta pessoal permite criar repositórios públicos e privados. Contas de organização permitem um controle maior sobre os repositórios, possuem diversas politícas sobre permissões de quem pode acessá-los.
+
+Pull request: integrar o trabalho entre as branchs.
+
+Actions: solução do github que proporciona a parte de automação com o CI/CD. Workflows: fluxo do CI/CD, estruturado a partir de arquivos.
+
+Code scanning: busca vulnerabilidades no código.
+Dependences scanning: busca vulnerabilidades relacionadas aos pacotes utilizados na aplicação.
+Secret scanning: busca por segredos expostos dentro do repositório.
+
+Markdown é uma linguagem de marcação leve para formatação de texto simples. Ele foi projeto p ser fácil de ler e escrever. Pode ser convertido em HTML e outros formatos.
+
+Commit é um registro instântaneo do repositório em um momento específico da linha do tempo.
+
+Untracked: fase dentro do repositório de todos os arquivos que não estavam sendo monitoradas pelo git. Exemplo: criação de um arquivo novo.
+Unmodified: A medida que o arquivo é modificado ele fica nessa fase.
+Modified: Fase em que o arquivo é mudado e reconhecido peloo git.
+Staged: Fase em que estamos preparando os arquivos para serem commitados.
+
+Uma branch é como se fosse um ponteiro direcionado para um co9mmit específico. Cada commit tem uma HASH (identificador). Uma branch aponta sempre para um snapshot, que pode ser alterado.
+
+A branch head sempre aponta para a branch que esta sendo utilizada. 
+
+Estratégias de Branch
+
+Git Flow: conjunto de branchs. cada uma específica p um cenário dentro do código.
+
+Branch main: registra versões operáveis da aplicação, ou sejam todas as versões que funcionam.
+
+Branch develop: é de onde todo desenvolvimento vai partir.
+
+Branch feature: cria as funcionalidades da aplicação.
+
+Branch hotfix: utilizada quando o trabalho já foi entregue para a branch main e surge um erro.
+
+GitHub FLow: fluxo que segue uma premissa mais simplificada. No github flow trabalhamos com uma limitação de branchs. Todas as mudançãs são feitas na github feature dpsé passado para a branch principal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
